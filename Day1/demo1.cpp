@@ -1,6 +1,9 @@
 #include <iostream>
 
 int main(){
+    //877
+    //909
+    //2028
     int n1 =10;
     int *ptr =&n1;
     int **Sptr = &ptr ;
