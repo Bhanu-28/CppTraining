@@ -49,7 +49,7 @@ int main(){
     Student* s4=new Student(403,"yolo",890.8f,'B',Department::AI_ML);
 
     delete s2;
-    //stack objects data of similat data type
+    //stack objects data of similar data type
     Student arr[2] ={s1,s3};//array of stack allocated Student Objects 
     //heap objects 
     Student* heapArr[2] ={s2,s4};

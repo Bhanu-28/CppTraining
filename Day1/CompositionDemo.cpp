@@ -42,13 +42,14 @@ public:
 
 int main(){
         Account* ac1 = new Account(
-            new DebitCard(190,"4314 56"),"Harshit"
+            new DebitCard(190,"4314 56"),"Vicek sthi"
         );
-        std::cout<<*ac1;
+        std::cout<<*ac1<<"\n";
 
 //method 2 is wrong as debitcard is creating without account 
     DebitCard* db = new DebitCard(201,"6781 91");
     Account* ac2 = new Account(db,"Rohan");
+    std::cout<<*ac2<<"\n";
 }
 
 /*
@@ -60,7 +61,7 @@ int&n2 = n1;//n2 isa reference to n1(alias)
 //card is a stack-allocated debitcard instance 
 DebitCard card; //stack(automatic storage)
 
-//card is a debit card pointer to heap allocated debir ccard instance 
+//card is a debit card pointer to heap allocated debit card instance 
 DebiCard* card = new DebitCard();//heap
 
 DebitCard& c1 = card;//c1 is a alternate name for card 

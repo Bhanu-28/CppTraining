@@ -10,6 +10,8 @@ int main(){
 
     //data inside n1
     std::cout<<"Data inside n1 :"<<n1<<"\n";
+    //data inside ptr
+    std::cout<<"Data inside ptr :"<<ptr<<"\n";
     //data inside Sptr
     std::cout<<"Data inside Sptr :"<<Sptr<<"\n" ;  
     //jump ptr 1 time 
