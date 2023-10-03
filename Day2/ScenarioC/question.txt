@@ -1,0 +1,12 @@
+we want to create objects of multiple classes (which are part of inheritance hierarchy)
+
+WE WOULD LIKE TO STORE ALL OBJECTS IN THE SAME CONTAINER 
+
+ALL classes IN THE hierarchy HAVE COMMON FUNCTIONALITY USAUALLY DECLARED IN PARENT CLASS 
+
+create a class bike with following attributes 
+
+-bike_mileage which is float value 
+_bike_type which is either commute,sports,atv
+
+//3 locations reserved each location can store 8 bytes(address)
