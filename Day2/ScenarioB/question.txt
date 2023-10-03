@@ -1,0 +1,23 @@
+we want to create a new type and one or more sub-categories od that type each time 
+a new data value comes it should belong to one of the sub -categories and should
+ never be tagged as genral type 
+we created 
+
+
+ex:- as student join in college he will be as science student like that 
+i make vehicle class as abstract class 
+
+=>calculate tax whose implemnetation might change in each child but signature is takes no  parameter return float 
+
+
+//method overriding 
+
+Create a class car with the following attributes 
+-carType which be sedan,suv,hatchback 
+//parameter copy from question filr 
+-calculateTax whose implemnetation is return as "return 10% of _price_"
+override the calculate tax 
+
+-create the following functionalities 
+--a function to create 3 objects in heap 
+//copy question
