@@ -1,0 +1,62 @@
+-- function calculate tax which will take 1 parameter float value
+it returnss times price 
+
+a function calculate tax that takes 0 parameter and returns 18 %  of price as tax 
+a function calculate tax that takes 2 parameter cgst and sgst float values 
+and returns cgst priceplus   and sgst price * 3 
+as answer  
+--function to find car with minimum price and print all its details 
+
+//vivk
+Virtual Functions
+
+ 
+
+if we are upcasting the compiler will always call parents class functions because, compiler does't understand
+which methods were overriden
+
+ 
+
+for non virtual functions the type of object is not matters but type of object that is point to matters
+
+ 
+
+class Employye{                  
+void PayTax();
+}
+
+ 
+
+classManager : public Employee{
+
+ 
+
+void PayTax();
+
+}
+
+ 
+
+Employee* arr[2]= {e1, m1} <- it will always consider funtion in employee (i.e parent)
+
+ 
+
+To overcome this problem
+
+ 
+
+we write 
+virtual void PayTax(); <- here compiler checks wheather override method present in child class or not.
+
+ 
+
+ 
+
+ 
+
+in c++ 
+if we create a object with const .. then we can only call data member function that are constant
+
+ 
+
+ex:- const Employee e1();
