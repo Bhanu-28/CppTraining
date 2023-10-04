@@ -1,9 +1,0 @@
-rule 1 : const keyworkd is applied to the token on its immediate left
-if there is nothing to its left cont is applied to the tokem on its immediate
-right 
-
-rule 2 : while working with pointers treat *symbol 
-as a token too!
-//star is written with space 
-
-const int * ptr ;
