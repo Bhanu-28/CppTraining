@@ -44,7 +44,7 @@ int main(){
     std::vector<Student*> data2={e1, c1};
     
     std::cout<<e1;
-std::cout<<(c2->_id);
+    std::cout<<(c2->_id);
 
 
 }

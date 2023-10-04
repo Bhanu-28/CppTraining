@@ -39,8 +39,8 @@ int main(){
     //stack 
     //stack upon reaching end will get deallocated  
     //s1 data type student   
-    Student s1(218,"bhanu",877.0f,'A',Department::CS);
-    Student s3(102,"kumar",8777.0f,'C',Department::IT);
+    Student s1(242,"bhanu",877.0f,'A',Department::CS);
+    Student s3(999,"kumar",8777.0f,'C',Department::IT);
     //heap //address will come 
     // need to triger manually 
     //memory leak if not triggered 
@@ -48,11 +48,16 @@ int main(){
     Student* s2=new Student(242,"pradeep",890.8f,'B',Department::AI_ML);
     Student* s4=new Student(403,"yolo",890.8f,'B',Department::AI_ML);
 
-    delete s2;
+
     //stack objects data of similar data type
-    Student arr[2] ={s1,s3};//array of stack allocated Student Objects 
+    Student arr[2] ={s3,s1};//array of stack allocated Student Objects 
     //heap objects 
     Student* heapArr[2] ={s2,s4};
+
+    delete s2;
+    delete s4;
+
+
     
 
     }

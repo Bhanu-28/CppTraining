@@ -20,23 +20,23 @@ int main(){
     <<(arr+0)
     <<"\n";
     std::cout<<"jump  of first location and adress"
-    <<*(arr+0)
+    <<*(arr+0)<<"\n"
     <<&arr
     <<"\n";
     std::cout<<"jump  of second location and adress"
-    <<*arr+1
+    <<*arr+1<<"\n"
     <<&arr+1
     <<"\n";
     std::cout<<"jump  of third location and adress"
-    <<*(arr+2)
+    <<*(arr+2)<<"\n"
     <<&arr+2
     <<"\n";
     std::cout<<"jump  of fourth location and adress"
-    <<*(arr+3)
+    <<*(arr+3)<<"\n"
     <<&arr+3
     <<"\n";
     std::cout<<"jump  of fifth location and adress"
-    <<*(arr+4)
+    <<*(arr+4)<<"\n"
     <<&arr+4
     <<"\n";
 

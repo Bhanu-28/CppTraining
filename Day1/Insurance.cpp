@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "InsuranceType.h"
 class Insurance
 {
 private:
