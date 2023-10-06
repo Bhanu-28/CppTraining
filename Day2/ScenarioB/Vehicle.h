@@ -16,7 +16,10 @@ public:
     Vehicle(const Vehicle& obj)=default;
     Vehicle(std::string id,std::string brand,float price,VehicleType type);
     Vehicle(std::string id,std::string brand,VehicleType type);
-    virtual float CalculateTax()=0; //pure virtual function known as abstract method in java 
+    virtual float CalculateTax()=0; 
+    
+    //if i write =0 means it means pure virtual function
+    //pure virtual function known as abstract method in java 
 
     ~Vehicle() {
         std::cout

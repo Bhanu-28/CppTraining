@@ -1,0 +1,17 @@
+create a class employee with following attributes 
+
+    -_id which is string
+    -_name which is string 
+    -_salary which is float 
+    -_dept which is either development,testing or integration 
+    -_project which is a pointer to an instance of a project class 
+
+create a project class whith following attributes
+    -_name which is a string 
+    -_duration_daya which is integer
+    -_budget which is float 
+
+
+    //create a diagram refer after books page 
+
+

@@ -8,10 +8,11 @@ int main(){
     ids[0]=12;
     ids[1]=89;
     ids[2]=90;
-    std::cout<<ids[0]<<ids[1]<<ids[2]<<std::endl;
+    std::cout<<ids[0]<<"\n"<<ids[1]<<"\n"<<ids[2]<<"\n"<<std::endl;
 
     std::array<int,4>duo;
     duo.at(0)=1;
-    std::cout<<duo[0]<<std::endl;
+    duo[1]= 50;
+    std::cout<<duo[1]<<std::endl;
 
 }
