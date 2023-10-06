@@ -14,6 +14,10 @@ public:
     {
 
     }
+    Manager(int size) 
+    :_team_size(){
+
+    }
     void CalculateTax() override{
         std::cout<<"Manager pays 20% tax\n";
     }
