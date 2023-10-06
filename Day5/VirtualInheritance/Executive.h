@@ -12,8 +12,9 @@ public:
     Executive(std::string id,std::string name,std::string location) 
     :Employee(id,name),_location(location){}
 
-    Executive(std::string location){
-        
+    Executive(std::string location)
+    :_location(location){
+
     }
 
     void CalculateTax() override{

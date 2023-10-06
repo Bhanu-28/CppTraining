@@ -14,8 +14,8 @@ public:
     {
 
     }
-    Manager(int size) 
-    :_team_size(){
+    Manager(int teamSize) 
+    :_team_size(teamSize){
 
     }
     void CalculateTax() override{
