@@ -21,7 +21,7 @@ public:
         std::string id ,std::string name,
         int teamSize,std::string location,float budget)
    
-  :Employee(id,name),Manager(id,name,teamSize),Executive(id,name,location) ,_budget(budget){
+  :Employee(id,name),Manager(teamSize),Executive(location) ,_budget(budget){
 //most derived class can use base class
    }
 
