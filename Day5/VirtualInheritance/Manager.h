@@ -9,9 +9,12 @@ private:
     int _team_size;
 public:
     Manager(std::string id,std::string name,int teamSize) 
-    :_team_size(teamSize)
+    :Employee(id,name),_team_size(teamSize)
     {
 
+    }
+    void CalculateTax() override{
+        std::cout<<"Manager pays 20% tax\n";
     }
     ~Manager() {}
 };
