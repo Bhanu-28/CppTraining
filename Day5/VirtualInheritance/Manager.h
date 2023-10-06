@@ -31,7 +31,7 @@ public:
 };
 
 inline std::ostream &operator<<(std::ostream &os, const Manager &rhs) {
-    os << static_cast<const Employee &>(rhs)
+    os 
        << " _team_size: " << rhs._team_size;
     return os;
 }

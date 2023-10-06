@@ -1,0 +1,13 @@
+create a class called card with attributes 
+
+    -_number which is a 4 digit number (check for condition)
+    -_cvv_number which is a 3 digit number 
+
+create  a class debit card with attributes 
+    -_category which is either PREMIUM,SIGNATURE OR DELUXE
+
+create a class CreditCard with attributes
+    -_limit which is an integer value.
+
+create the following functionalities.cpp
+    
