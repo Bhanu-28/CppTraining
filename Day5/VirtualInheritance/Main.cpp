@@ -12,5 +12,6 @@ int main(){
     );
     std::cout<<"director object \n";
     std::cout<<*d1<<std::endl;
+    
     delete d1;
 }
