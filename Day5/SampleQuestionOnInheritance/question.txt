@@ -15,7 +15,7 @@ create  a class debit card with attributes
 
 create a class CreditCard with attributes
     -_limit which is an integer value.
-    -an overridden CalulcateTaxOnCharge implementation which returm (_limit/100)* _annual_charge
+    -an overridden CalulcateTaxOnCharge implementation which returm (_limit/100)* annual_charge
 
 create the following functionalities.cpp
     -create 5 objects(2 of debitcard and 3 of CreditCard ) on the heap 
