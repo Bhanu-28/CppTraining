@@ -21,7 +21,7 @@ float AverageBudget(Project *arr2[3])
 }
 
 
-Employee *EmployeeWithHighestSalary(Employee *arr1[3],Department dept)
+Employee *EmployeeWithHighestSalary(Employee *arr1[3])
 {
     Employee* result = nullptr;
     //assume first employee salary as highest 
@@ -41,8 +41,25 @@ Employee *EmployeeWithHighestSalary(Employee *arr1[3],Department dept)
     return result;
 }
 
-void CreateObjects(Employee *arr[3], Project *arr2[3])
+
+void CreateObjects(Employee *emp_arr[3], Project *project_arr[3])
 {
+    
+
+    //3 project objects
+    project_arr[0]= new Project("CPP Project",70,20000000.f);
+    project_arr[1]= new Project("JAVA Project",40,10000000.f);
+    //project_arr[2]= new Project("PYTHON Project",30,10000000.f);
+    project_arr[2]= new Project("PYTHON Project",30,10000000.f);
+
+
+
+    //creating 3  employee objects 
+    emp_arr[0]= new Employee("emp101", "Prakhyath",30000.0f,Department::DEVELOPMENT,project_arr[0]);
+    emp_arr[1]= new Employee("emp102", "Ganavi",50000.0f,Department::DEVELOPMENT,project_arr[1]);
+    emp_arr[2]= new Employee("emp103", "Prath",60000.0f,Department::TESTING,project_arr[2]);
+   
+
 }
 
 int CountEmployeeWithGivenDepartment(Employee *arr[3],Department dept)

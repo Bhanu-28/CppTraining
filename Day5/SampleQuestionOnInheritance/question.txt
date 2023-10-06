@@ -3,18 +3,19 @@ create a class called card with attributes
     -_number which is a 4 digit number (check for condition)
     -_cvv_number which is a 3 digit number 
     -_issuer which is either VISA,MASTERCARD,RUPAY
-    -_annual_charge which is a float value 
+    -_annual_charge which is a float value
+    _limit which is  a integer value   
     -An abstract method CalulcateTaxOnCharge which returns float and takes 0 arguments.
 
-create  a class debit card with attributes 
+create  a class debit card(inherits from card ) with attributes 
     -_category which is either PREMIUM,SIGNATURE OR DELUXE
     -an overridden CalulcateTaxOnCharge implementation which return 
     (_limit/100) * annual_charge if ISSUER IS VISA 
     (_limit/50) * annual_charge if ISSUER IS MASTERCARD 
     (_limit/10) * annual_charge if ISSUER IS RUPAY 
 
-create a class CreditCard with attributes
-    -_limit which is an integer value.
+create a class CreditCard(inherits from card ) with attributes
+    -_transaction_limit which is a float value 
     -an overridden CalulcateTaxOnCharge implementation which returm (_limit/100)* annual_charge
 
 create the following functionalities.cpp

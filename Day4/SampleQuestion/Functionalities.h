@@ -12,13 +12,13 @@ link one project to one employee
 Input: 2 arrays (one for employee), (second for project)
 output: void 
 */
-void CreateObjects( Employee* arr[3], Project* arr2[3]);
+void CreateObjects( Employee* emp_arr[3], Project* project_arr[3]);
 
 
 /* 
  a function to return pointer to employee with highest salary 
 */
-Employee* EmployeeWithHighestSalary(Employee* arr1[3],Department dept);
+Employee* EmployeeWithHighestSalary(Employee* arr1[3]);
 
 
 /* a function to return count of all employees in the array 

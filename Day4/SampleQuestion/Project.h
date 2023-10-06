@@ -1,5 +1,6 @@
 #ifndef PROJECT_H
 #define PROJECT_H
+#include <iostream>
 
 class Project
 {
@@ -26,6 +27,10 @@ public:
     int durationDays() const { return _duration_days; }
 
     float budget() const { return _budget; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Project &rhs);
+
+    
 };
 
 #endif // PROJECT_H
