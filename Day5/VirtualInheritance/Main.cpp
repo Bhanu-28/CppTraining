@@ -10,5 +10,6 @@ int main(){
         "pune",
         987.67f
     );
+    std::cout<<"director object \n";
     delete d1;
 }

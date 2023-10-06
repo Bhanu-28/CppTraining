@@ -1,6 +1,7 @@
 #ifndef MANAGER_H
 #define MANAGER_H
 #include "Employee.h"
+#include <ostream>
 
 class Manager : virtual public Employee
 {
@@ -16,7 +17,19 @@ public:
     void CalculateTax() override{
         std::cout<<"Manager pays 20% tax\n";
     }
-    ~Manager() {}
+    virtual~Manager() {
+        std::cout<<"manager destroyed \n";
+    }
+
+    int teamSize() const { return _team_size; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Manager &rhs);
 };
+
+inline std::ostream &operator<<(std::ostream &os, const Manager &rhs) {
+    os << static_cast<const Employee &>(rhs)
+       << " _team_size: " << rhs._team_size;
+    return os;
+}
 
 #endif // MANAGER_H

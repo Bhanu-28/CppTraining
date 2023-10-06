@@ -3,6 +3,7 @@
 #include "Manager.h"
 #include "Executive.h"
 #include "Employee.h"
+#include <ostream>
 
 /* 
 in multiple inheritance in cpp the most derived class is reponsible for 
@@ -27,7 +28,18 @@ public:
    void CalculateTax(){
     std::cout<<"director pays 1% tax as he skips the tax and save money ";
    }
-    ~Director() {}
+    ~Director() {
+        std::cout<<"director destroyed \n";
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const Director &rhs);
 };
+
+inline std::ostream &operator<<(std::ostream &os, const Director &rhs) {
+    os << static_cast<const Manager &>(rhs)
+       << static_cast<const Executive &>(rhs)
+       << " _budget: " << rhs._budget;
+    return os;
+}
 
 #endif // DIRECTOR_H

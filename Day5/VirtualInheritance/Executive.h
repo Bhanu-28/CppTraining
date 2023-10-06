@@ -1,6 +1,7 @@
 #ifndef EXECUTIVE_H
 #define EXECUTIVE_H
 #include "Employee.h"
+#include <ostream>
 
 class Executive :virtual public Employee
 {
@@ -14,9 +15,19 @@ public:
     void CalculateTax() override{
         std::cout<<"executive pays 40% tax ";
     }
-    ~Executive() {
+   virtual ~Executive() {
         std::cout<<"executive is destroyed of location "<<_location<<std::endl;
     }
+
+   std::string location() const { return _location; }
+
+   friend std::ostream &operator<<(std::ostream &os, const Executive &rhs);
 };
+
+inline std::ostream &operator<<(std::ostream &os, const Executive &rhs) {
+    os << static_cast<const Employee &>(rhs)
+       << " _location: " << rhs._location;
+    return os;
+}
 
 #endif // EXECUTIVE_H
