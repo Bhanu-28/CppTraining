@@ -11,7 +11,8 @@ int main(){
         987.67f
     );
     std::cout<<"director object \n";
+    d1->CalculateTax();
     std::cout<<*d1<<std::endl;
-    
+
     delete d1;
 }
