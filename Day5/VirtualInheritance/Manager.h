@@ -9,7 +9,8 @@ private:
     int _team_size;
 public:
     Manager(std::string id,std::string name,int teamSize) 
-    :_team_size(teamSize){
+    :_team_size(teamSize)
+    {
 
     }
     ~Manager() {}
