@@ -15,6 +15,8 @@ public:
     Car(std::string id,std::string brand,VehicleType type,CarType cType);
 
     float CalculateTax() override;
+
+    
     
     ~Car() {
         //calling getter since private property of parent cant be accesses in child 
