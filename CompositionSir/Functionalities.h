@@ -20,7 +20,7 @@ bool CheckNull(Employee* arr[SIZE]);
     Output : void
 */
 
-void CreateObjects(  Employee* arr1[SIZE]  );
+void CreateObjects(Employee* arr1[SIZE]  );
 
 /*
     A function to return the pointer to the Employee with 

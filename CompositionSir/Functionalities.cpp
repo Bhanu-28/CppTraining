@@ -102,7 +102,7 @@ float AverageBudget(Employee *arr2[SIZE])
         total += arr2[i]->project()->budget();
     }
 
-    return total / 3;
+    return total / SIZE;
 }
 
 void FreeMemory(Employee *arr1[SIZE])

@@ -1,25 +1,21 @@
 #ifndef PROJECT_H
 #define PROJECT_H
 #include <iostream>
-
 class Project
 {
 private:
+    /* data */
     std::string _name;
     int _duration_days;
     float _budget;
 public:
-    Project(
-       std::string name,
-       int duration,
-       float budget 
-    );
-    Project() = delete; //
-    Project(const Project&) = delete; 
+    Project(std::string name,int duration,float budget);
+    Project() =delete ;
+    Project(const Project&) = delete;
     ~Project() {
-        std::cout << "Project with Name: "
-            << _name 
-            << " is destroyed\n";
+        std::cout <<"project with name: "
+        <<_name<<"\n"
+        <<"is destroyed \n";
     }
 
     std::string name() const { return _name; }
