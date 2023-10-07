@@ -6,7 +6,7 @@ void Demo(){
     int n2 =20;
     //const id applied on 'int' not on 'int*'
 
-    //ptr is  constant pointer to any integer 
+    //ptr is  constant pointer to constant  integer 
      int * const ptr = &n1;
     //since pointer itself is  constant its content can't be changed,
     //so address inside ptr can't be changed 

@@ -33,7 +33,7 @@ public:
     );
     float CalculateTax();
     float CalculateTax(float tax_percent);
-    float CalculateTax(float cgst,float sgst);
+    float CalculateTax(float sgst,float cgst);
 
     std::string id() const { return _id; }
 
@@ -55,14 +55,14 @@ public:
 
     VehicleType type() const { return _type; }
 
-    // friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs
+    friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
 
-       friend std::ostream& operator <<(std ::ostream& os,const Vehicle& obj){
-            os <<"Id:"<<obj._id<<"\t"<<"Brand :"<<obj._brand
-            <<"\t"<<"Price: "<<obj._price<<"\t"<<"Type :"
-            <<DisplayEnum(obj._type);
-            return os;
-        }
+    //    friend std::ostream& operator <<(std ::ostream& os,const Vehicle& obj){
+    //         os <<"Id:"<<obj._id<<"\t"<<"Brand :"<<obj._brand
+    //         <<"\t"<<"Price: "<<obj._price<<"\t"<<"Type :"
+    //         <<DisplayEnum(obj._type);
+    //         return os;
+    //     }
 
 
 
