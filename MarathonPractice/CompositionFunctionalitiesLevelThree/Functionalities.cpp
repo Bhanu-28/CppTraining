@@ -3,10 +3,10 @@
 
 bool CheckAllNullValues(Employee *arr[SIZE])
 {
-    bool flag = false;
-    for(int i=0;i<SIZE,i++;){
-        if(arr[i]!=nullptr){
-            return true;
+    bool flag = true;
+    for(int i=0;i<SIZE;i++){
+        if(arr[i]!=nullptr){ 
+            return false;
         }
     }
     return flag;
