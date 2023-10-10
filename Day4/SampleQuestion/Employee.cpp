@@ -11,3 +11,18 @@ std::ostream &operator<<(std::ostream &os, const Employee &rhs) {
        << " _project: " <<rhs._project;
     return os;
 }
+std::string DisplayEnum(const Department value)
+{
+    if(Department::DEVELOPMENT==value){
+        return "DEVELOPMENT";
+    }
+
+    else if(Department::INTEGRATION==value)
+    {
+        return "INTEGRATION";
+    }
+
+    else{
+        return "TESTING";
+    }
+}
