@@ -7,6 +7,8 @@ std::ostream &operator<<(std::ostream &os, const CreditCard &rhs) {
     return os;
 }
 
+
+
 int CreditCard::operator+(const CreditCard obj)
 {
     return limit() + obj.limit();
@@ -18,4 +20,12 @@ CreditCard::CreditCard(int number, int cvv, Issuer issuer, float charge, int lim
 float CreditCard::CalculateTax()
 {
     return (limit() / 100 ) * annualCharge();
+}
+
+std::ostream &operator<<(std::ostream &os, const CreditCard &rhs) {
+    os << "_number: " << rhs._number
+       << " _crType: " << rhs._crType
+       << " _limit: " << rhs._limit
+       << " _cvv_number: " << rhs._cvv_number;
+    return os;
 }
